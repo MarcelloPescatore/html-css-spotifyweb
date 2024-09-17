@@ -30,6 +30,36 @@ body{
     height: 90px;
 }
 
+.top_content{
+    height: 90px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+
+    .songs{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .card_song{
+            .box{
+                width: 179px;
+                height: 179px;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+
 /* color */
 :root{
     --cl-line_hover: #ADFF2F;   
@@ -66,6 +96,16 @@ body{
 
         .bottom{
             background-color: red ;
+        
         }
+
+        .top_content{
+            background-color: orange;
+        }
+
+        .box{
+            background-color: pink;
+        }
+
     }
 /* #endregion debug */
