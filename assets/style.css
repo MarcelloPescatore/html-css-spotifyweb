@@ -1,8 +1,33 @@
-/* region common */
+/* #region common */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    height: 100vh;
+}
+
+.top{
+    height: calc(100%-90px);
+    display: flex;
+}
+
+#sidebar{
+    width: 230px;
+    height: 100%;
+}
+
+#content{
+    width: calc(100%-230px);
+    height: 100%;
+    overflow-y: auto;
+}
+
+.bottom{
+    height: 90px;
 }
 
 /* color */
@@ -27,4 +52,20 @@
    --cl-icon_secondary: #757575;
    --bg-bottom: #282828; 
 }
-/* endregion common */
+/* #endregion common */
+
+/* #region debug */
+    .debug{
+        #sidebar{
+            background-color: green;
+        }
+
+        #content{
+            background-color: blue;
+        }
+
+        .bottom{
+            background-color: red ;
+        }
+    }
+/* #endregion debug */
