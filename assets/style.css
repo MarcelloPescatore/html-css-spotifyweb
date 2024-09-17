@@ -11,7 +11,7 @@ body{
 }
 
 .top{
-    height: calc(100%-90px);
+    height: calc(100% - 90px);
     display: flex;
 }
 
@@ -21,7 +21,7 @@ body{
 }
 
 #content{
-    width: calc(100%-230px);
+    width: calc(100% - 230px);
     height: 100%;
     overflow-y: auto;
 }
