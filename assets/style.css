@@ -1,0 +1,30 @@
+/* region common */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color */
+:root{
+    --cl-line_hover: #ADFF2F;   
+
+   /* sidebar */
+   --bg-sidebar: #000000;
+   --cl-icon_hover:  #D2D2D2;
+   --cl-icon_unhover: #BFBFBF;
+   --txt_cl-hover: #FFFFFF;
+   --txt_cl-unhover: #717171;
+   
+   /* top */
+   --txt_cl-primary: #FFFFFF;
+   --txt_cl-secondary: #7D7F84;
+   --bg-main: #141922;
+   --bg-top_bar: #080B12;
+
+   /* bottom */
+   --cl-icon_primary: #FFFFFF;
+   --cl-icon_secondary: #757575;
+   --bg-bottom: #282828; 
+}
+/* endregion common */
