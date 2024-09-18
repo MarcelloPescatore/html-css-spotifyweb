@@ -44,7 +44,8 @@ h2{
     font-size: 24px;
     font-weight: 600;
     color: var(--txt_cl-primary);
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 h3{
@@ -250,6 +251,7 @@ span{
 #sidebar{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 230px;
     height: 100%;
     overflow: hidden;
@@ -258,13 +260,17 @@ span{
     @media (max-width: 600px){
         width: 50px;
         align-items: center;
+
+        #nav, #logo{
+            margin-top: 1rem;
+        }
     }
 }
 
 #logo{
     padding: 1rem;
     img{
-        width: 80%;
+        width: 70%;
     }
 
     img:last-child{
@@ -290,6 +296,7 @@ span{
 }
 
 #nav{
+    padding: 0.5rem 0 1rem 0;
 
     li:first-child{
         border-left: 2px solid var(--cl-line_hover);
@@ -390,6 +397,61 @@ span{
         display: none;
     }
 
+}
+
+#download{
+    padding: 0.5rem 1rem;
+    color: var(--txt_cl-secondary);
+    
+    >div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        padding-bottom: 1rem;
+
+        .circle{
+            padding: 0.25rem 0.5rem;
+            border: 1px solid var(--txt_cl-secondary);
+
+            i{
+                font-size: 12px;
+            }
+        }
+    }
+
+    @media (max-width: 600px){
+        padding: 0rem 1rem;
+
+        span, hr{
+            display: none;
+        }
+
+        >div{
+            justify-content: center;
+            padding-bottom: 0.5rem;
+        }
+    }
+}
+
+#account{
+    padding: 1rem;
+    color: var(--txt_cl-primary);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .circle{
+        padding: 0.5rem 0.5rem;
+        background-color: var(--txt_cl-secondary);
+        border: 1px solid var(--txt_cl-secondary);
+    }
+
+    @media (max-width: 600px){
+        span{
+            display: none;
+        }
+    }
 }
 
 /* #endregion main sidebar */
