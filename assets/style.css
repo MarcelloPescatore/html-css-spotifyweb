@@ -198,6 +198,10 @@ img{
     .col-sm-6{
         width: calc((100%/12)*6);
     }
+
+    #playlist{
+        display: none;
+    }
     
 }
 
