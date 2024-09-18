@@ -162,6 +162,19 @@ img{
 
 .top_content{
     height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--bg-top_bar);
+
+    span{
+        border: 1px solid var(--cl-icon_primary);
+        border-radius: 3rem ;
+        padding: 0.5rem 1rem;
+        margin-right: 1rem;
+        color: var(--txt_cl-primary);
+        text-transform: uppercase;
+    }
 }
 
 .row{
@@ -261,9 +274,6 @@ img{
         
         }
 
-        .top_content{
-            background-color: orange;
-        }
 
         .box{
             background-color: pink;
