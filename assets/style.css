@@ -101,11 +101,13 @@ img{
 
         li{
             width: 100%;
+            text-align: center;
         }
 
         li a{
             display: none;
         }
+    
     }
 }
 
@@ -137,6 +139,12 @@ img{
     @media (max-height: 650px){
         overflow-y: auto;
     }
+
+    @media (max-width: 600px){
+        display: none;
+    }
+
+
     
 }
 
@@ -201,21 +209,9 @@ img{
 }
 
 @media screen and (max-width: 600px) {
-    #nav{
-        ul>li{
-            text-align: center;
-        }
-    }
-
     .col-sm-12{
         width: calc((100%/12)*12);
-    }
-
-    #playlist{
-        display: none;
-    }
-    
-    
+    }   
 }
 
 
