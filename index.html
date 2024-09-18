@@ -62,7 +62,7 @@
                         <div class="add_box">
                             <i class="fa-solid fa-plus"></i>
                         </div>
-                        <div>
+                        <div class="label">
                             <span>Crea Playlist</span>
                         </div>
                     </div>
@@ -90,16 +90,15 @@
                 </div>
                 <!-- /Playlist -->
             </div>
+            <!-- /contents sidebar -->
             <div>
                 <div id="download">
-                    <div>
-                        <div class="circle">
+                    <div class="circle">
                             <i class="fa-solid fa-arrow-down"></i>
-                        </div>
-                        <span>Installa app</span>
                     </div>
-                    <hr>
+                    <span>Installa app</span>
                 </div>
+                <hr>
                 <div id="account">
                     <div class="circle">
                         <i class="fa-regular fa-user"></i>
@@ -107,11 +106,14 @@
                     <span>John Doe</span>
                 </div>
             </div>
+            <!-- /download & account -->
         </aside>
         <!-- /sidebar -->
         <div id="content">
             <div class="top_content">
-                <span>effettua l'upgrade</span>
+                <div class="button">
+                    <span>effettua l'upgrade</span>
+                </div>
             </div>
             <!-- /top_content-->
 
@@ -306,23 +308,43 @@
                 </div>
             </div>
             <div class="icons">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
             </div>
         </div>
         <div class="middle col-4">
-            <div class="row_strument">              
-                <i class="fa-solid fa-shuffle"></i>                
-                <i class="fa-solid fa-backward-step"></i>               
-                <i class="fa-solid fa-play circle"></i>                           
-                <i class="fa-solid fa-forward-step"></i>
-                <i class="fa-solid fa-rotate-right"></i>
+            <div class="row_strument">
+                <div>
+                    <i class="fa-solid fa-shuffle"></i>                
+                </div>
+                <div>
+                    <i class="fa-solid fa-backward-step"></i>               
+                </div>
+                <div class="circle play_icon">
+                    <i class="fa-solid fa-play"></i>                           
+                </div>
+                <div>
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>              
             </div>
             <div class="row_strument">
                 <div>
                     <span>0:25</span>
                 </div>
                 <div class="bar">
+                    <div class="unspent_bar">
+                    </div>
+                    <div class="spent_bar">
+                        <div class="toggle">
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <span>4:35</span>
@@ -335,7 +357,14 @@
                 <i class="fa-solid fa-tv"></i>
                 <i class="fa-solid fa-volume-high"></i>
             </div>
-            <div class="bar"></div>
+            <div class="bar">
+                <div class="unspent_bar">
+                </div>
+                <div class="spent_bar">
+                    <div class="toggle">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- /bottom -->
