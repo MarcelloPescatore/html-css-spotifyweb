@@ -15,6 +15,35 @@ img{
     max-width: 100%;
 }
 
+/* font */
+h2{
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--txt_cl-primary);
+    padding-bottom: 0.5rem;
+}
+
+h3{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+    color: var(--txt_cl-primary);
+    padding-bottom: 0.5rem;
+}
+
+h4{
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    padding-bottom: 0.5rem;
+    color: var(--txt_cl-secondary);
+}
+
+span{
+    font-family: "Inter", sans-serif;
+}
+
 /* col */
 
 .col-lg-2{
@@ -199,6 +228,7 @@ img{
     width: calc(100% - 230px);
     height: 100%;
     overflow-y: auto;
+    background-color: var(--bg-main);
 
     @media (max-width: 600px){
         width: calc(100% - 50px);
@@ -230,11 +260,30 @@ img{
     .songs{
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -1rem;
+        justify-content: flex-start;
+        margin: 0 -0.5rem;
 
 
         .card_song{
-            padding: 1rem;
+            padding: 0.5rem;
+            text-align: center;
+
+            h3{
+                span:first-child{
+                    display: none;
+                }
+
+                @media (max-width: 1300px){
+                    span:first-child{
+                        display: inline-block;
+                        font-weight: 400;
+                    }
+
+                    span:last-child{
+                        display: none;
+                    }
+                }
+            }
         
             .box{
                 aspect-ratio: 1;
@@ -310,18 +359,9 @@ img{
             background-color: green;
         }
 
-        #content{
-            background-color: blue;
-        }
-
         .bottom{
             background-color: red ;
         
-        }
-
-
-        .box{
-            background-color: pink;
         }
 
     }
